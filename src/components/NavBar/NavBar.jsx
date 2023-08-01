@@ -6,6 +6,7 @@ import Logo from '../../assets/img/logoBonitaLovelyw.png';
 import bagIcon from '../../assets/img/baghandle.svg'
 import bellIcon from '../../assets/img/-icon-bell.svg';
 import vector from '../../assets/img/vector.svg'
+import ellipse from "../../assets/img/ellipse-3.svg"
 import { FaBars } from 'react-icons/fa';
 
 const Navbar = ({ initialLanguage }) => {
@@ -39,40 +40,44 @@ const Navbar = ({ initialLanguage }) => {
         </div> */}
 
         <ul className={`${style.menu} ${showMenu ? style.show : ''}`}>
-          <li className={style.menuItem}>
-            <NavLink to="/" lang={initialLanguage === 'en' ? 'en' : 'es'}>
+          <li>
+            <NavLink to="/" lang={initialLanguage === 'en' ? 'en' : 'es'} 
+            className={style.menuItem}>
               {initialLanguage === 'en' ? 'Home' : 'Inicio'}
             </NavLink>
           </li>
 
-          <li className={style.menuItem}>
-            <NavLink to="../../views/AboutUs/AboutUs" lang={initialLanguage === 'en' ? 'en' : 'es'}>
-              {initialLanguage === 'en' ? 'Sobre Nosotros' : 'About Us'}
+          <li>
+            <NavLink to="../../views/AboutUs/AboutUs" lang={initialLanguage === 'en' ? 'en' : 'es'}  
+            className={style.menuItem}>
+              {initialLanguage === 'en' ? 'About Us' : 'Sobre Nosotros'}
             </NavLink>
           </li>
 
-          <li className={style.menuItem}>
-            <NavLink to="../../views/contact/contact" lang={initialLanguage === 'en' ? 'en' : 'es'}>
+          <li>
+            <NavLink to="../../views/contact/contact" lang={initialLanguage === 'en' ? 'en' : 'es'} 
+            className={style.menuItem}>
               {initialLanguage === 'en' ? 'Contact Us' : 'Contacto'}
             </NavLink>
           </li>
 
-          <li className={style.menuItem}>
-            <NavLink to="" lang={initialLanguage === 'en' ? 'en' : 'es'}>
+          <li>
+            <NavLink to="" lang={initialLanguage === 'en' ? 'en' : 'es'} 
+            className={style.menuItem}>
               {initialLanguage === 'en' ? 'FAQs' : 'FAQs'}
             </NavLink>
           </li>
         </ul>
-        <div className={style.header}></div>
-        <img className={style.bagIcon} alt="" src={bagIcon} />
-        <img className={style.bellIcon} alt="" src={bellIcon} />
-        <img className={style.vector} alt="" src={vector} />
-        <p className={style.menuItem}>
-            <NavLink to="" lang={initialLanguage === 'en' ? 'en' : 'es'}>
-              {initialLanguage === 'en' ? 'Login/SignUp' : 'Ingresar/Crear cuenta'}
-            </NavLink>
-          </p>
-
+        <div className={style.header}>
+  <img className={style.bagIcon} alt="" src={bagIcon} />
+  <img className={style.bellIcon} alt="" src={bellIcon} />
+  <img className={style.vector} alt="" src={vector} />
+  <img src={ellipse} alt="Ellipse" className={style.ellipse} />
+  <NavLink to="" lang={initialLanguage === 'en' ? 'en' : 'es'} 
+  className={`${style.menuItem} ${style.login}`}>
+    {initialLanguage === 'en' ? 'Login/SignUp' : 'Ingresar/Crear cuenta'}
+  </NavLink>
+</div>
       </nav>
     </>
   );

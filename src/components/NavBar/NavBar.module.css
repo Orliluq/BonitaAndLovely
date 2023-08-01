@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    color: black;
+    color: #0D0202;
     padding: 1rem;
     position: relative;
     z-index: 1;
@@ -20,8 +20,11 @@
   
   .menuItem {
     margin: 0 1rem;
-  }
-  
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+  }  
   
   .logo {
     width: 277px; 
@@ -31,20 +34,45 @@
   
   .bagIcon,
   .bellIcon,
-  .vector {
+  .vector,
+  .ellipse {
     width: 30px; 
-    height: auto; 
+    height: auto;
+    margin-right: 10px;
   }
-  
-  
-  .loginText {
-    margin-left: 1rem;
+  .bagIcon{
+    margin-left: 12rem;
   }
-  
+  .vector{
+    margin-left: 3rem;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .ellipse {
+    width: 47px;
+    height: auto;
+  }
+  .login{
+    margin: 0;
+    padding: 0;
+  }
+ .login span{ 
+
+ }
   
   .menu.show {
     display: flex;
     flex-direction: column;
   }
   
- 
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Adjust this value to control the distance between icons and ellipse */
+  }
+
+
+
+
+
+
