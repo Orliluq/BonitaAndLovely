@@ -43,21 +43,21 @@ const Navbar = ({ initialLanguage }) => {
           </li>
 
           <li>
-            <NavLink to="../../views/AboutUs/AboutUs" lang={initialLanguage === 'en' ? 'en' : 'es'}  
+            <NavLink to="/AboutUs" lang={initialLanguage === 'en' ? 'en' : 'es'}  
             className={`${style.menuItem} ${style.itemAbout}`}>
               {initialLanguage === 'en' ? 'About Us' : 'Nosotros'}
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="../../views/contact/contact" lang={initialLanguage === 'en' ? 'en' : 'es'} 
+            <NavLink to="/contact" lang={initialLanguage === 'en' ? 'en' : 'es'} 
             className={style.menuItem}>
               {initialLanguage === 'en' ? 'Contact Us' : 'Contacto'}
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="" lang={initialLanguage === 'en' ? 'en' : 'es'} 
+            <NavLink to="/faqs" lang={initialLanguage === 'en' ? 'en' : 'es'} 
             className={style.menuItem}>
               {initialLanguage === 'en' ? 'FAQs' : 'FAQs'}
             </NavLink>
