@@ -1,0 +1,50 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+ 
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menuItem {
+    margin: 0 1rem;
+  }
+  
+  
+  .logo {
+    width: 277px; 
+    height: auto; 
+  }
+  
+  
+  .bagIcon,
+  .bellIcon,
+  .vector {
+    width: 30px; 
+    height: auto; 
+  }
+  
+  
+  .loginText {
+    margin-left: 1rem;
+  }
+  
+  
+  .menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+  
+ 
