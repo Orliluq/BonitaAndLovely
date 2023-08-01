@@ -9,6 +9,7 @@ export const FormSearchBar = styled.form`
 	display: flex;
 	justify-content: space-between;
 	padding: 0 .7em;
+	border: 1px solid #eecafa;
 	
 	&:hover, &:focus-within  {
 		box-shadow: inset 0 0 7px rgba(0,0,0,.15);
@@ -19,7 +20,9 @@ export const FormSearchBar = styled.form`
 		background: transparent;    
 		border: none;
 		margin-left: .5em;
+
 		transition: transform .2s cubic-bezier(.25,.1,.75,2);
+		
 		transform-origin: center;
 		text-align: right;
 		&:hover, &:focus {
@@ -34,9 +37,11 @@ export const FormSearchBar = styled.form`
 
     input {
 		background: transparent;
-		border: none;
-		font-family: Poppins, sans-serif;
+		border: 1px #0D0202;
+		font-family: 'Roboto', sans-serif;
+		font-weight:bold;
 		font-size: 12px;
+		color: #a53fc7;
 		padding: .7em 1em;
 		width: 90%;
 	}

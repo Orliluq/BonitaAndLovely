@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FormSearchBar } from './Styled_SearchBar';
-import loupe from '../../assets/img/loupe.svg';
+import loupe from '../../assets/img/Loupe.svg';
 
 const SearchBar = ({ placeholder, history }) => {
 
