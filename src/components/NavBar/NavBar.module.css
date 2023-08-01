@@ -25,6 +25,9 @@
     font-size: 15px;
     text-decoration: none;
   }  
+  .menuItem:hover{
+    color: #EECAFA;
+  }
   
   .logo {
     width: 277px; 
@@ -44,7 +47,7 @@
     margin-left: 12rem;
   }
   .vector{
-    margin-left: 3rem;
+    margin-left: 1rem;
     margin-right: 0px;
     padding-right: 0px;
   }

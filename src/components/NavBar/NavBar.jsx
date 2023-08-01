@@ -70,9 +70,12 @@ const Navbar = ({ initialLanguage }) => {
         </ul>
         <div className={style.header}>
   <img className={style.bagIcon} alt="" src={bagIcon} />
-  <img className={style.bellIcon} alt="" src={bellIcon} />
-  <img className={style.vector} alt="" src={vector} />
   <img src={ellipse} alt="Ellipse" className={style.ellipse} />
+  
+  <img className={style.bellIcon} alt="" src={bellIcon} />
+  <img src={ellipse} alt="Ellipse" className={style.ellipse} />
+  
+  <img className={style.vector} alt="" src={vector} />
   <NavLink to="" lang={initialLanguage === 'en' ? 'en' : 'es'} 
   className={`${style.menuItem} ${style.login}`}>
     {initialLanguage === 'en' ? 'Login/SignUp' : 'Ingresar/Crear cuenta'}
